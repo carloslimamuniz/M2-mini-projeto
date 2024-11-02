@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main id="info_form">
+      <section id="form">
+        <h1 class="title">Cadastro de participantes</h1>
+        <form onsubmit="sendForm()">
+          <label for="nome"> Nome </label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome"
+          />
+
+          <label for="Idade"> Idade </label>
+          <input
+            class="input"
+            type="number"
+            placeholder="Digite sua idade  "
+            id="idade"
+          />
+
+          <label for="comentario">Comentário</label>
+          <textarea
+            id="comentario"
+            placeholder="Deixe um comentario aqui "
+          ></textarea>
+
+          <div class="checkbox">
+            <input id="checkbox" type="checkbox" onchange="changeCheckbox()"/>
+            <p>Possuo acompanhante(s)</p>
+          </div>
+
+          <div class="others">
+            <div class="box-title">
+              <h2>Adicione acompanhantes</h2>
+              <button type="button" onclick="addField()" class="add">+</button>
+            </div>
+
+            <div id="fields-container">
+            </div>
+          </div>
+          
+          <button class="btn" onclick="sendForm()" type="button">
+            Cadastrar
+          </button>
+        </form>
+      </section>
+
+      <section id="list">
+      </section>
+    </main>
+    <script src="/src/script.js"></script>
+  </body>
+</html>

@@ -11,7 +11,7 @@
     <main id="info_form">
       <section id="form">
         <h1 class="title">Cadastro de participantes</h1>
-        <form onsubmit="sendForm()">
+        <form>
           <label for="nome"> Nome </label>
           <input
             class="input"
@@ -35,22 +35,26 @@
           ></textarea>
 
           <div class="checkbox">
-            <input id="checkbox" type="checkbox" onchange="changeCheckbox()"/>
+            <input id="checkbox" type="checkbox" onchange="onChangeCheckbox()"/>
             <p>Possuo acompanhante(s)</p>
           </div>
 
           <div class="others">
             <div class="box-title">
               <h2>Adicione acompanhantes</h2>
-              <button type="button" onclick="addField()" class="add">+</button>
+              <button type="button" onclick="onAddField()" class="add">+</button>
             </div>
 
             <div id="fields-container">
             </div>
           </div>
           
-          <button class="btn" onclick="sendForm()" type="button">
+          <button id="btn-register" class="btn" onclick="onSubmitForm()" type="button">
             Cadastrar
+          </button>
+
+          <button id="btn-save" class="btn" onclick="onSaveModificationsInList()" type="button">
+            Salvar
           </button>
         </form>
       </section>

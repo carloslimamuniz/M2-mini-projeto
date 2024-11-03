@@ -92,6 +92,10 @@ textarea::placeholder,
     margin-top: 2rem;
 }
 
+.item-list {
+    margin-top: 1rem;
+}
+
 .box-title {
     display: flex;
     align-items: center;
@@ -203,6 +207,20 @@ textarea::placeholder,
     padding: 2rem;
 
     border-radius: 8px;
+
+    position: relative;
+}
+
+.icon-edit {
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+
+    bottom: 10px;
+    right: 10px;
+
+    cursor: pointer;
 }
 
 .separator {
@@ -211,4 +229,8 @@ textarea::placeholder,
     background-color: var(--text);
 
     margin-block: 1rem;
+}
+
+#btn-save {
+    display: none;
 }

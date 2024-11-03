@@ -96,7 +96,7 @@ textarea::placeholder,
 }
 
 .box-title {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
@@ -185,7 +185,7 @@ textarea::placeholder,
     gap: 1rem;
 
     overflow-y: scroll;
-    max-height: 428px;
+    max-height: 90%;
 
     margin-block: auto;
 

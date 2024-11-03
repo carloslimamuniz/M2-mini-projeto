@@ -35,7 +35,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     border-right: 1px solid var(--gray-500);
 
@@ -182,7 +181,6 @@ textarea::placeholder,
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
 
     gap: 1rem;
 
@@ -191,7 +189,7 @@ textarea::placeholder,
 
     margin-block: auto;
 
-    padding: 10rem;
+    padding-inline: 10rem;
 }
 
 #list > div {
@@ -207,8 +205,10 @@ textarea::placeholder,
     padding: 2rem;
 
     border-radius: 8px;
-
+    
     position: relative;
+    
+    margin-top: 1rem;
 }
 
 .icon-edit {
@@ -233,4 +233,21 @@ textarea::placeholder,
 
 #btn-save {
     display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    main#info_form {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    #form {
+        overflow: hidden;
+    }
+
+    #list {
+        overflow: hidden;
+    }
+    
 }

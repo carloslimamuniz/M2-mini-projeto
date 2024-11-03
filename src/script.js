@@ -270,6 +270,6 @@ function onEnableListEditing(index) {
   form.enableListEditing(index);
 }
 
-function onRemoveField() {
-  form.removeField();
+function onRemoveField(index) {
+  form.removeField(index);
 }
